@@ -51,6 +51,27 @@ button:focus {
     outline-offset: 2px;
 }
 
+/* Buttons in Header */
+#lang-btn,
+#print-pdf-btn {
+    cursor: pointer;
+    position: absolute;
+    /* Default positioning */
+    top: 10px;
+    padding: 6px 12px;
+    font-size: 0.9em;
+    z-index: 10;
+    /* Ensure buttons are above other content if overlap occurs */
+}
+
+#lang-btn {
+    left: 10px;
+}
+
+#print-pdf-btn {
+    right: 15px;
+    /* Removed float: right; as absolute positioning handles it */
+}
 
 /* Header */
 header {
@@ -58,6 +79,8 @@ header {
     margin-bottom: 40px;
     border-bottom: 2px solid #eee;
     padding-bottom: 30px;
+    padding-top: 50px;
+    /* Increased from original to create more space */
     position: relative;
     /* For positioning button */
 }
@@ -133,11 +156,6 @@ section h2 {
     /* Remove default indent */
     border-left: none;
     /* Remove default border */
-}
-
-/* Experience Item Specific Styling */
-.experience-item {
-    /* Inherits .item margin */
 }
 
 .experience-summary {
@@ -423,14 +441,14 @@ footer p {
     }
 
     /* Optionally show full URL after links */
-    a[href^="http"]::after,
-    a[href^="mailto"]::after,
-    a[href^="tel"]::after {
-        /* content: " (" attr(href) ")"; Temporarily disable, can be noisy */
-        /* font-size: 0.8em; */
-        /* color: #555 !important; */
-        /* word-wrap: break-word; */
-    }
+    /* a[href^="http"]::after, */
+    /* a[href^="mailto"]::after, */
+    /* a[href^="tel"]::after { */
+    /* content: " (" attr(href) ")"; Temporarily disable, can be noisy */
+    /* font-size: 0.8em; */
+    /* color: #555 !important; */
+    /* word-wrap: break-word; */
+    /* } */
 
     #contact-info a[href^="mailto"]::after,
     #contact-info a[href^="tel"]::after {
@@ -716,21 +734,37 @@ footer p {
     }
 
     #skills-list {
-        gap: 8px;
-    }
-
-    #skills-list li {
-        font-size: 0.9em;
-        padding: 5px 10px;
-    }
-
-    /* Stack skills in single column on very small screens */
-    #skills-list {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    #skills-list.grouped-skills {
-        /* Already single column */
+    /* Adjust header buttons for very small screens */
+    #lang-btn,
+    #print-pdf-btn {
+        top: 5px;
+        /* Move closer to top */
+        padding: 4px 8px;
+        /* Make smaller */
+        font-size: 0.8em;
+    }
+
+    #lang-btn {
+        left: 5px;
+    }
+
+    #print-pdf-btn {
+        right: 5px;
+    }
+
+    header {
+        padding-top: 60px;
+        /* Increase padding to prevent overlap with h1 */
+        text-align: center;
+        /* Ensure text remains centered */
+    }
+
+    header h1 {
+        margin-top: 0;
+        /* Reset margin if needed */
     }
 }
