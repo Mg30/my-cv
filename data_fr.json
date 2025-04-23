@@ -1,0 +1,105 @@
+{
+    "personalInfo": {
+        "name": "Matthieu G.",
+        "title": "DATA - Python - Spark - SQL - Javascript | Ingénieur Logiciel Freelance | Ingénieur Data",
+        "email": "matgonzalez736@gmail.com",
+        "phone": "+33 6 48 25 46 53",
+        "linkedin": "https://www.linkedin.com/in/matthieu-gonzalez/",
+        "github": "https://github.com/Mg30",
+        "portfolio": "https://medium.com/@matgonzalez",
+        "location": "Niort, Nouvelle-Aquitaine, France",
+        "summary": "Ingénieur Logiciel et Ingénieur Data freelance, expert en Python, Spark, SQL et JavaScript. Expérience dans la conception de pipelines de données, le développement d’APIs, la création de modèles de machine learning et l’automatisation de processus. Capacité avérée à diriger des initiatives techniques et à encadrer des équipes.",
+        "lastUpdated": "2025-04-23"
+    },
+    "experience": [
+        {
+            "title": "Ingénieur Logiciel, Data",
+            "company": "MAIF · Freelance",
+            "location": "Niort, Nouvelle-Aquitaine, France",
+            "years": "Juin 2024 - Présent · 11 mois",
+            "description": [
+                "Conception d'une API rapide pour exposer un moteur de projection RH améliorant la précision financière des coûts.",
+                "Conception d’un framework pour créer un chatbot IA en utilisant FAST API et un serveur MCP pour exposer des outils internes."
+            ]
+        },
+        {
+            "title": "Ingénieur Logiciel, Data",
+            "company": "Groupe Covéa · Freelance",
+            "location": "Niort, Nouvelle-Aquitaine, France · Hybride",
+            "years": "Avr. 2023 - Sept. 2024 · 1 an 6 mois",
+            "description": [
+                "Développement de packages Python pour standardiser la reconnaissance et la lecture automatique de documents via Azure Cognitive Services, assurant un traitement robuste et efficace.",
+                "Mise en place d’un pipeline de données intégrant des modèles de reconnaissance et de lecture de documents d’Azure avec la plateforme d’annotation Kili, facilitant la validation et la pré-annotation des modèles.",
+                "Développement d’une Azure Function capable de répondre à des cas RAD/LAD en temps réel en moins de 4 secondes grâce aux Azure Cognitive Services.",
+                "Encadrement d’ingénieurs data et de data scientists sur les bonnes pratiques Python (tests unitaires, principes SOLID), améliorant la qualité du code de l’équipe."
+            ]
+        },
+        {
+            "title": "Ingénieur Data",
+            "company": "MAIF · Freelance",
+            "location": "Niort, Nouvelle-Aquitaine, France · Hybride",
+            "years": "Oct. 2020 - Mars 2023 · 2 ans 6 mois",
+            "description": [
+                "Développement et mise en production du KPI ‘Taux de mobilité’ pour le Plan Stratégique MAIF en utilisant Spark, Python, SQL et JavaScript, fournissant un jeu de données complet pour des analyses précises.",
+                "Conception d’un modèle de données intégrant les OBTs métiers et les tables GOLD pour les applications utilisateurs, réduisant les complexités de migration lors d’une transition critique.",
+                "Création d’un package Python pour automatiser les extractions de données récurrentes et intégrer les résultats dans SharePoint, rationalisant les opérations et économisant du temps.",
+                "Formation des analystes data à Spark, Git et Python, en insistant sur les bonnes pratiques de codage.",
+                "Étude statistique approfondie sur l’absentéisme via des algorithmes de clustering, fournissant des profils détaillés pour la stratégie RH."
+            ]
+        },
+        {
+            "title": "Data Analyst",
+            "company": "AXA Global Direct · Contrat d’apprentissage",
+            "location": "Rennes, Bretagne, France",
+            "years": "Sept. 2018 - Août 2020 · 2 ans",
+            "description": [
+                "Automatisation de l’extraction de données depuis les entrepôts et diverses sources avec SQL et Python, améliorant l’accessibilité et l’efficacité des processus.",
+                "Création d’APIs REST évolutives et robustes avec Flask, facilitant l’intégration de données et l’interfaçage applicatif.",
+                "Développement de dashboards et rapports interactifs avec Vue.js pour des visualisations de données en temps réel.",
+                "Utilisation de Docker pour un déploiement d’applications efficace, évolutif et cohérent.",
+                "Réalisation de cartographies de données et dictionnaires de métadonnées détaillés pour améliorer la gouvernance et l’intégrité des données."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "degree": "Master 2 (M2) MIAGE Ingénierie des Systèmes d’Information, Informatique",
+            "institution": "Université de Nantes",
+            "location": "Nantes, France",
+            "years": "2019 - 2020",
+            "details": "Diplômé avec mention"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Footixify - Plateforme de Prédictions Football",
+            "description": "Création et mise en ligne d’une plateforme web prête pour la production (Next.js, Vercel, Supabase) utilisant ISR, SSG et SSR pour fournir des prédictions football quotidiennes avec un ROI constant de +5% sur des milliers de paris. Modèle ML sur mesure développé et containerisé (Python, scikit-learn), orchestré avec AWS Fargate et automatisé avec Pulumi (IaC). Scraping de données automatisé avec Node.js & Puppeteer, stockage sur S3, traitement à grande échelle avec PySpark sur AWS Glue en architecture médaillon. Intégration de Google Analytics et usage de l’IA générative pour booster l’engagement sur Reddit et Twitter. Application des bonnes pratiques CI/CD, collecte continue de feedback utilisateurs, itérations pour améliorer l’UX et la performance des prédictions.",
+            "technologies": [
+                "Next.js",
+                "Vercel",
+                "Supabase",
+                "Google Analytics",
+                "IA Générative",
+                "Python",
+                "Docker",
+                "AWS Fargate",
+                "Node.js",
+                "Puppeteer",
+                "AWS S3",
+                "PySpark",
+                "AWS Glue",
+                "Architecture Médaillon",
+                "Pulumi"
+            ],
+            "link": "https://www.footixify.com/"
+        }
+    ],
+    "skills": [
+        "Langages de Programmation : Python, SQL, JavaScript (ES6+)",
+        "Frameworks/Bibliothèques : FastAPI, React - Next.js, PySpark",
+        "Bases de Données : PostgreSQL, Supabase, GreenPlum",
+        "Outils & Plateformes : Git, Docker, Azure Cognitive Services, Azure Functions, AWS (Fargate, S3, Glue, Lambda), Vercel, GitHub Actions, Pulumi",
+        "Méthodologies : Agile, APIs REST, Tests Unitaires, Principes SOLID, Architecture Médaillon",
+        "Autres : Bases SEO, IA Générative"
+    ]
+}

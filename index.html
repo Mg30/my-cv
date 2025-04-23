@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Matthieu Gonzalez - CV | Software Engineer | DATA | IA</title>
+    <meta name="description"
+        content="Matthieu Gonzalez's professional CV showcasing skills and experience in software engineering, including projects and education details.">
+    <meta name="keywords"
+        content="software engineer, python, backend,data, IA, javascript, react, node.js, full stack, cv, resume, portfolio, Matthieu Gonzalez">
+
+    <meta property="og:title" content="Matthieu Gonzalez - Curriculum Vitae">
+    <meta property="og:description" content="Professional CV detailing skills, experience, and projects in DATA.">
+    <meta property="og:url" content="https://github.com/Mg30">
+    <meta property="og:type" content="profile">
+    <meta property="profile:first_name" content="Matthieu">
+    <meta property="profile:last_name" content="Gonzalez">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container no-print-styles">
+        <header>
+            <!-- bouton switch langue -->
+            <button id="lang-btn" class="no-print" title="Switch language"
+                style="position: absolute; top: 15px; left: 15px; padding: 6px 12px; cursor: pointer;">
+                FR
+            </button>
+            <button id="print-pdf-btn" class="no-print" title="Print or Save as PDF"
+                style="float: right; padding: 8px 15px; cursor: pointer; font-size: 0.9em;">
+                📄 Print / Save PDF
+            </button>
+            <h1 id="name"></h1>
+            <p id="title"></p>
+            <div id="contact-info">
+            </div>
+            <p id="summary"></p>
+        </header>
+
+        <main>
+            <section id="experience">
+                <h2>Experience</h2>
+                <div id="experience-list">
+                </div>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <div id="education-list">
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <div id="projects-list">
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul id="skills-list">
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>© <span id="current-year"></span> <span id="footer-name"></span>. All rights reserved.</p>
+            <p>Last updated: <span id="last-updated"></span></p>
+        </footer>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

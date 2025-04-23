@@ -1,0 +1,736 @@
+/* Basic Reset & Body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Optional: smooth scroll for internal links if any */
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    /* Standard A4-like width */
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    color: #2980b9;
+    text-decoration: underline;
+    outline: 2px solid #3498db;
+    /* Basic focus outline */
+    outline-offset: 2px;
+}
+
+/* Ensure buttons also have focus states */
+button:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
+
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 30px;
+    position: relative;
+    /* For positioning button */
+}
+
+header h1 {
+    margin-bottom: 5px;
+    color: #2c3e50;
+    font-weight: 700;
+    font-size: 2.2em;
+    /* Slightly larger name */
+}
+
+header #title {
+    margin-bottom: 15px;
+    color: #3498db;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+#contact-info {
+    margin-bottom: 15px;
+    font-size: 0.95em;
+    /* Slightly larger contact */
+    color: #555;
+}
+
+#contact-info span {
+    margin: 0 5px;
+    display: inline-block;
+    white-space: nowrap;
+    /* Prevent wrapping within a contact item */
+}
+
+#contact-info br.contact-separator {
+    display: block;
+    /* Ensure the break works */
+    content: "";
+    /* Required for display: block on br */
+    margin-top: 5px;
+    /* Space before social links */
+}
+
+header #summary {
+    margin-top: 20px;
+    font-size: 1.05em;
+    /* Slightly larger summary */
+    color: #555;
+    text-align: left;
+    /* Left align usually better for readability */
+}
+
+/* Sections */
+section {
+    margin-bottom: 35px;
+}
+
+section h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+    /* Increased space after heading */
+    font-weight: 700;
+    font-size: 1.5em;
+    /* Larger section titles */
+}
+
+/* Item styling (Experience, Education, Projects) */
+.item {
+    margin-bottom: 30px;
+    /* Increased space between items */
+    padding-left: 0;
+    /* Remove default indent */
+    border-left: none;
+    /* Remove default border */
+}
+
+/* Experience Item Specific Styling */
+.experience-item {
+    /* Inherits .item margin */
+}
+
+.experience-summary {
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin-bottom: 0;
+    /* Remove margin, details will attach directly */
+    position: relative;
+    transition: background-color 0.2s ease;
+}
+
+.experience-summary:hover,
+.experience-summary:focus {
+    background-color: #f0f0f0;
+    outline: none;
+    /* Remove default focus outline, use link style */
+}
+
+.experience-summary:focus-visible {
+    /* More specific focus */
+    outline: 2px solid #3498db;
+    outline-offset: 1px;
+}
+
+
+.experience-summary h3 {
+    margin-bottom: 3px;
+    color: #333;
+    font-weight: 700;
+    display: inline;
+    /* Keep inline */
+    font-size: 1.15em;
+}
+
+.experience-summary .meta {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 0;
+    font-style: italic;
+    display: block;
+    /* Ensure meta is below title */
+    margin-top: 4px;
+}
+
+.experience-summary .meta span {
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.experience-summary .toggle-icon {
+    position: absolute;
+    /* Position relative to summary */
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 1.4em;
+    /* Larger icon */
+    color: #3498db;
+    padding: 0 5px;
+    /* Clickable area */
+}
+
+.experience-details {
+    padding: 15px 15px 15px 20px;
+    /* Indent details slightly */
+    border: 1px solid #eee;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    background-color: #fff;
+    /* Animation */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    max-height: 1000px;
+    /* Set a large max-height for animation */
+}
+
+/* Style for when details are hidden (JS sets display: none) */
+.experience-details[style*="display: none"] {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-width: 0 1px;
+    /* Keep side borders during collapse */
+}
+
+
+.experience-details ul {
+    list-style: disc;
+    margin-left: 20px;
+    font-size: 0.95em;
+    color: #444;
+}
+
+.experience-details ul li {
+    margin-bottom: 8px;
+    /* More space between bullet points */
+}
+
+/* Generic Item styles (apply to education, project if needed) */
+.item h3 {
+    margin-bottom: 3px;
+    color: #333;
+    font-weight: 700;
+    font-size: 1.15em;
+    /* Consistent heading size */
+}
+
+.item .meta {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+.item .meta span {
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.item .description {
+    font-size: 0.95em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Education Specific */
+.education-item {
+    border-left: 3px solid #eee;
+    /* Optional: Add back border for visual separation */
+    padding-left: 15px;
+}
+
+/* Project Specific */
+.project-item {
+    border-left: 3px solid #eee;
+    /* Optional: Add back border */
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+
+.project-item .technologies {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.project-item .technologies strong {
+    color: #333;
+}
+
+.project-item .technologies span {
+    background-color: #e7f3fe;
+    /* Lighter blue background */
+    color: #346080;
+    /* Darker blue text */
+    padding: 3px 10px;
+    border-radius: 4px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    display: inline-block;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+.project-item .project-link {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 0.95em;
+    font-weight: bold;
+}
+
+/* Skills */
+#skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#skills-list li {
+    background-color: #3498db;
+    color: #fff;
+    padding: 6px 14px;
+    /* Slightly larger pills */
+    border-radius: 15px;
+    font-size: 0.95em;
+    /* Slightly larger skill text */
+    transition: background-color 0.2s ease;
+}
+
+#skills-list li:hover {
+    background-color: #2980b9;
+    /* Darken on hover */
+}
+
+/* Styling for grouped skills */
+#skills-list.grouped-skills {
+    display: block;
+    /* Override flex */
+    columns: 2;
+    /* Display in columns if space allows */
+    column-gap: 30px;
+}
+
+.skill-group {
+    margin-bottom: 10px;
+    font-size: 0.95em;
+    break-inside: avoid-column;
+    /* Try to prevent breaking mid-group */
+}
+
+.skill-group strong {
+    color: #2c3e50;
+    margin-right: 5px;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 25px;
+    border-top: 1px solid #eee;
+    font-size: 0.9em;
+    /* Slightly larger footer text */
+    color: #777;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+/* ================== PRINT STYLES ================== */
+@media print {
+
+    /* Basic reset for print */
+    body {
+        background-color: #fff !important;
+        color: #000 !important;
+        font-size: 10pt;
+        /* Common print size */
+        padding: 0;
+        margin: 0;
+        -webkit-print-color-adjust: exact;
+        /* Force background colors/images in Chrome/Safari */
+        print-color-adjust: exact;
+        /* Standard */
+    }
+
+    /* Remove elements not needed for print */
+    #print-pdf-btn,
+    .no-print {
+        display: none !important;
+    }
+
+    /* Container adjustments for print */
+    .container,
+    .no-print-styles {
+        /* Target both just in case */
+        max-width: 100% !important;
+        /* Use full page width */
+        margin: 0 !important;
+        padding: 20pt 30pt !important;
+        /* Add print margins (adjust as needed) */
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        border: none !important;
+        background-color: #fff !important;
+    }
+
+    /* Ensure links are visible and show URL */
+    a {
+        color: #000 !important;
+        /* Black text for links */
+        text-decoration: underline !important;
+        /* Underline all links */
+    }
+
+    /* Optionally show full URL after links */
+    a[href^="http"]::after,
+    a[href^="mailto"]::after,
+    a[href^="tel"]::after {
+        /* content: " (" attr(href) ")"; Temporarily disable, can be noisy */
+        /* font-size: 0.8em; */
+        /* color: #555 !important; */
+        /* word-wrap: break-word; */
+    }
+
+    #contact-info a[href^="mailto"]::after,
+    #contact-info a[href^="tel"]::after {
+        content: "";
+        /* Don't show mailto: or tel: links */
+    }
+
+
+    header {
+        text-align: left !important;
+        /* Keep header content left-aligned */
+        border-bottom: 1px solid #ccc !important;
+        padding-bottom: 15pt !important;
+        margin-bottom: 25pt !important;
+    }
+
+    /* ... other header print styles like h1, #title ... */
+
+    #contact-info {
+        font-size: 9pt !important;
+        text-align: left !important;
+        /* Ensure the container itself is left-aligned */
+        margin-top: 10pt;
+        /* Add some space above contact info in print */
+        line-height: 1.4;
+        /* Adjust line height if needed */
+    }
+
+    #contact-info span {
+        display: inline-block !important;
+        /* <<< THIS IS THE KEY FIX */
+        margin: 0 10pt 3pt 0 !important;
+        /* Adjust horizontal/vertical spacing for print */
+        padding: 0 !important;
+        white-space: nowrap;
+        /* Prevent long emails/links from breaking */
+        vertical-align: top;
+        /* Align items consistently if they wrap */
+    }
+
+    /* Ensure the forced line break remains hidden */
+    #contact-info br.contact-separator {
+        display: none !important;
+    }
+
+    /* Remove the URL display for contact links specifically if desired */
+    #contact-info a::after {
+        content: "" !important;
+        /* Don't show (mailto:...) or (tel:...) */
+    }
+
+    /* Add space between inline contacts */
+
+    footer {
+        border-top: 1px solid #ccc !important;
+        margin-top: 30pt !important;
+        padding-top: 15pt !important;
+        font-size: 8pt !important;
+        color: #666 !important;
+        text-align: center !important;
+    }
+
+    /* Section adjustments */
+    section {
+        margin-bottom: 20pt !important;
+    }
+
+    section h2 {
+        font-size: 14pt !important;
+        color: #000 !important;
+        border-bottom: 1px solid #999 !important;
+        padding-bottom: 5pt !important;
+        margin-bottom: 15pt !important;
+    }
+
+    /* Item adjustments */
+    .item {
+        margin-bottom: 15pt !important;
+        padding-left: 0 !important;
+        border-left: none !important;
+        page-break-inside: avoid !important;
+        /* Try to keep items on one page */
+    }
+
+    .item h3 {
+        font-size: 11pt !important;
+    }
+
+    .item .meta {
+        font-size: 9pt !important;
+    }
+
+    .item .description {
+        font-size: 10pt !important;
+    }
+
+    .item ul li {
+        font-size: 10pt !important;
+        margin-bottom: 4pt;
+    }
+
+
+    /* Experience: Ensure details are always visible */
+    .experience-summary {
+        background-color: #fff !important;
+        border: none !important;
+        padding: 0 0 5pt 0 !important;
+        /* Remove padding/border */
+        cursor: default !important;
+    }
+
+    .experience-summary .toggle-icon {
+        display: none !important;
+        /* Hide toggle icon */
+    }
+
+    .experience-details {
+        display: block !important;
+        /* FORCE VISIBLE */
+        border: none !important;
+        padding: 0 0 0 15pt !important;
+        /* Indent list */
+        max-height: none !important;
+        /* Override animation property */
+        background-color: #fff !important;
+    }
+
+    .experience-details ul {
+        margin-left: 10pt;
+    }
+
+
+    /* Skills adjustments */
+    #skills-list {
+        display: flex !important;
+        /* Keep flex for wrapping */
+        flex-wrap: wrap !important;
+        gap: 5pt 8pt !important;
+    }
+
+    #skills-list li {
+        background-color: #eee !important;
+        /* Use light gray for print */
+        color: #000 !important;
+        padding: 2pt 6pt !important;
+        border-radius: 3pt !important;
+        font-size: 9pt !important;
+        border: 1px solid #ccc;
+    }
+
+    /* Grouped skills for print */
+    #skills-list.grouped-skills {
+        display: block !important;
+        columns: 1 !important;
+        /* Force single column for less chaotic print */
+    }
+
+    .skill-group {
+        font-size: 10pt !important;
+        margin-bottom: 5pt !important;
+    }
+
+    .skill-group strong {
+        color: #000 !important;
+    }
+
+
+    /* Project adjustments */
+    .project-item .technologies span {
+        background-color: #eee !important;
+        color: #000 !important;
+        border: 1px solid #ccc;
+        padding: 2pt 5pt !important;
+        font-size: 8pt !important;
+    }
+
+    /* Page breaking hints (use sparingly) */
+    h1,
+    h2,
+    h3 {
+        page-break-after: avoid !important;
+    }
+
+    section {
+        page-break-before: auto;
+        /* Can try 'always' if you want each section on a new page */
+    }
+
+    ul,
+    p {
+        page-break-inside: auto;
+        /* Default, allows breaking */
+    }
+
+}
+
+
+/* Responsive Design (Keep existing, adjust if needed) */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px auto;
+        padding: 20px 25px;
+        /* Adjust padding */
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header #title {
+        font-size: 1.1em;
+    }
+
+    section h2 {
+        font-size: 1.4em;
+    }
+
+    #contact-info span {
+        display: block;
+        /* Stack contact info */
+        margin: 5px 0;
+        white-space: normal;
+        /* Allow wrapping */
+    }
+
+    #contact-info span:not(:last-child)::after {
+        content: "";
+        /* Remove "|" separator */
+    }
+
+    #contact-info br.contact-separator {
+        display: none;
+    }
+
+    /* Hide break */
+
+
+    #skills-list.grouped-skills {
+        columns: 1;
+        /* Single column on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+        /* Adjust base font size */
+        padding: 5px;
+    }
+
+    .container {
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header #title {
+        font-size: 1em;
+    }
+
+    section h2 {
+        font-size: 1.3em;
+    }
+
+    .item h3 {
+        font-size: 1.1em;
+    }
+
+    .experience-summary h3 {
+        font-size: 1.1em;
+    }
+
+    #skills-list {
+        gap: 8px;
+    }
+
+    #skills-list li {
+        font-size: 0.9em;
+        padding: 5px 10px;
+    }
+
+    /* Stack skills in single column on very small screens */
+    #skills-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #skills-list.grouped-skills {
+        /* Already single column */
+    }
+}
