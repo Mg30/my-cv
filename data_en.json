@@ -1,25 +1,27 @@
 {
     "personalInfo": {
         "name": "Matthieu G.",
-        "title": "DATA - Python - Spark - SQL - Javascript | Freelance Software Engineer | DATA Engineer",
+        "title": "Technical Architect, DATA/AI",
         "email": "matgonzalez736@gmail.com",
         "phone": "+33 6 48 25 46 53",
         "linkedin": "https://www.linkedin.com/in/matthieu-gonzalez/",
         "github": "https://github.com/Mg30",
         "portfolio": "https://medium.com/@matgonzalez",
         "location": "Niort, Nouvelle-Aquitaine, France",
-        "summary": "Freelance Software Engineer and Data Engineer with expertise in Python, Spark, SQL, and JavaScript. Experienced in designing data pipelines, building APIs, developing machine learning models, and automating processes. Proven ability to lead technical initiatives and mentor teams.",
-        "lastUpdated": "2025-04-23"
+        "summary": "Freelance Technical Data Architect, expert in Python, AI, SQL and JavaScript. Experience in designing data pipelines, API development, machine learning model creation and process automation. Proven ability to lead technical initiatives and mentor teams.",
+        "lastUpdated": "2025-10-19"
     },
     "experience": [
         {
-            "title": "Software Engineer, Data",
+            "title": "Technical Architect, Data",
             "company": "MAIF · Freelance",
             "location": "Niort, Nouvelle-Aquitaine, France",
             "years": "June 2024 - Present · 11 months",
             "description": [
-                "Designed a fast API to expose an engine to run human resource projection improving financial accuracy of costs.",
-                "Designed a framework for building AI chat bot using FAST API and MCP server to expose internal tools."
+                "Supported the CORE HR team in selecting the target solution to replace the current system. Advised on integration architecture and flow system for inter-system communication.",
+                "Designed a configurable payroll projection engine (turnover, hiring, AI/AG) improving financial accuracy of HR costs. Reduced scenario calculation time from several hours to 5 minutes on average.",
+                "Designed a platform for deploying agentic AI chatbots using FAST API and an MCP server to interface with internal IS.",
+                "Designed an agentic AI system to automate HR data request management, saving one FTE."
             ]
         },
         {

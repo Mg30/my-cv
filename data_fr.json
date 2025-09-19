@@ -1,25 +1,27 @@
 {
     "personalInfo": {
         "name": "Matthieu G.",
-        "title": "DATA - Python - Spark - SQL - Javascript | Ingénieur Logiciel Freelance | Ingénieur Data",
+        "title": "Architect technique, DATA/IA",
         "email": "matgonzalez736@gmail.com",
         "phone": "+33 6 48 25 46 53",
         "linkedin": "https://www.linkedin.com/in/matthieu-gonzalez/",
         "github": "https://github.com/Mg30",
         "portfolio": "https://medium.com/@matgonzalez",
         "location": "Niort, Nouvelle-Aquitaine, France",
-        "summary": "Ingénieur Logiciel et Ingénieur Data freelance, expert en Python, Spark, SQL et JavaScript. Expérience dans la conception de pipelines de données, le développement d’APIs, la création de modèles de machine learning et l’automatisation de processus. Capacité avérée à diriger des initiatives techniques et à encadrer des équipes.",
-        "lastUpdated": "2025-04-23"
+        "summary": "Architecte technique Data freelance, expert en Python, IA,SQL et JavaScript. Expérience dans la conception de pipelines de données, le développement d’APIs, la création de modèles de machine learning et l’automatisation de processus. Capacité avérée à diriger des initiatives techniques et à encadrer des équipes.",
+        "lastUpdated": "2025-10-19"
     },
     "experience": [
         {
-            "title": "Ingénieur Logiciel, Data",
+            "title": "Architecte technique, Data",
             "company": "MAIF · Freelance",
             "location": "Niort, Nouvelle-Aquitaine, France",
             "years": "Juin 2024 - Présent · 11 mois",
             "description": [
-                "Conception d'une API rapide pour exposer un moteur de projection RH améliorant la précision financière des coûts.",
-                "Conception d’un framework pour créer un chatbot IA en utilisant FAST API et un serveur MCP pour exposer des outils internes."
+                "Accompagnement de l'équipe CORE RH dans le choix de la solution cible pour remplacer le système actuel. Conseil sur l'architecture d'intégration et système de flux pour communication inter systèmes.",
+                "Conception d'un moteur de projection de masse salariale paramétrable (turn over, embauche, AI/AG) améliorant la précision financière des coûts RH. Réduction du temps de calcul d'un scénario de plusieurs heures à 5 minutes en moyenne.",
+                "Conception d'une plateforme permettant de déployer des chatbot IA agentique en utilisant FAST API et un serveur MCP pour s'interacer au SI interne.",
+                "Conception d'un système IA agentique permettant d'automtiser la gestion des demandes de data RH, gain d'un ETP."
             ]
         },
         {
