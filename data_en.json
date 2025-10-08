@@ -1,19 +1,19 @@
 {
     "personalInfo": {
         "name": "Matthieu G.",
-        "title": "Technical Architect, DATA/AI",
+        "title": "Senior Machine Learning Engineer",
         "email": "matgonzalez736@gmail.com",
         "phone": "+33 6 48 25 46 53",
         "linkedin": "https://www.linkedin.com/in/matthieu-gonzalez/",
         "github": "https://github.com/Mg30",
         "portfolio": "https://medium.com/@matgonzalez",
         "location": "Niort, Nouvelle-Aquitaine, France",
-        "summary": "Freelance Technical Data Architect, expert in Python, AI, SQL and JavaScript. Experience in designing data pipelines, API development, machine learning model creation and process automation. Proven ability to lead technical initiatives and mentor teams.",
-        "lastUpdated": "2025-09-19"
+        "summary": "Freelance Senior Machine Learning Engineer with expertise in Python, AI, SQL and JavaScript. Experienced in building data pipelines, productionising ML and agentic AI systems, and automating processes. Proven ability to lead ML initiatives and mentor teams.",
+        "lastUpdated": "2025-10-08"
     },
     "experience": [
         {
-            "title": "Technical Architect, Data",
+            "title": "Senior Machine Learning Engineer",
             "company": "MAIF · Freelance",
             "location": "Niort, Nouvelle-Aquitaine, France",
             "years": "June 2024 - Present · 11 months",
